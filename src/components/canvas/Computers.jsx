@@ -1,75 +1,61 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload } from "@react-three/drei";
+import { PLYLoader } from "three/examples/jsm/loaders/PLYLoader";
+import CanvasLoader from "../Loader"; // Custom loader component
 
-import CanvasLoader from "../Loader";
-
-const Models = ({ isMobile }) => {
-  const model = useGLTF("./desktop_pc/thesis_exhibition_1_noTopo.glb");
-
-  return (
-    <mesh>
-      <hemisphereLight intensity={100} groundColor="white" />
-      <pointLight intensity={60} />
-      <ambientLight intensity={100}/>
-      <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={100}
-        castShadow
-        shadow-mapSize={1024}
-      />
-      <primitive
-        object={model.scene}
-        scale={isMobile ? 0.15 : 0.2}
-        position={isMobile ? [0, -2.5, 10] : [0, 0, 0]}
-        rotation={[0, 90, 0]}
-      />
-    </mesh>
-  );
-};
-
-const ModelCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
+// Point Cloud component to load and display point cloud
+const PointCloud = ({ fileUrl }) => {
+  const [pointCloud, setPointCloud] = useState(null);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
-    setIsMobile(mediaQuery.matches);
+    const loader = new PLYLoader();
+    loader.load(fileUrl, (geometry) => {
+      geometry.computeVertexNormals(); // Compute normals for better shading
+      setPointCloud(geometry);
+    });
+  }, [fileUrl]);
 
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
+  if (pointCloud) {
+    return (
+      <points rotation={[-Math.PI / 2, 0, 0]}>
+        <bufferGeometry attach="geometry" {...pointCloud} />
+        <pointsMaterial attach="material" size={0.05} vertexColors={true} />
+      </points>
+    );
+  }
 
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-    return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
-  }, []);
+  return null; // Show a loader while the point cloud is loading
+};
+
+const ComputersCanvas = () => {
+  const pointCloudFileUrl = "/desktop_pc/AAL_RusselHeightsSite_AF.ply"; // URL to your .ply point cloud file
 
   return (
     <Canvas
       frameloop="demand"
       shadows
       camera={{
-        position: [10, 10, 10], // Isometric angle
-        zoom: isMobile ? 50 : 200, // Adjust scale
+        position: [20, 50, 50], // Adjust camera position
+        zoom: 75,
         near: 0.1,
         far: 1000,
       }}
-      orthographic // Enable orthographic projection
+      orthographic
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 3}
+        <OrbitControls 
+          enableZoom={false} 
+          enablePan={true}
+          maxPolarAngle={Math.PI / 2.8}
           minPolarAngle={Math.PI / 3}
-        />
-        <Models isMobile={isMobile} />
+          />
+        <PointCloud fileUrl={pointCloudFileUrl} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );
 };
 
-export default ModelCanvas;
+export default ComputersCanvas;

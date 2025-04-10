@@ -1,3 +1,4 @@
+import { details } from "framer-motion/client";
 import {
     mobile,
     backend,
@@ -33,6 +34,10 @@ import {
     {
       id: "work",
       title: "Work",
+    },
+    {
+      id: "projects",
+      title: "Projects",
     },
     {
       id: "contact",
@@ -116,55 +121,51 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Architectural Conservation Assistant",
+      company_name: "Ontario Heritage Trust",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "May 2019 - August 2019",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Site monitoring & recording the conditions of heritage easement sites around Ontario.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "Design and Construction Lead",
+      company_name: "Architecture Action Lab",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "March 2022 - March 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Led the design and construction of the Russel Heights Youth House and Playground, guiding projects from community engagement through final build phases to ensure inclusive, community-driven outcomes.",
+        "Facilitated participatory design sessions with local residents and youth, translating community needs into functional, inspiring architectural solutions.",
+        "Managed on-site construction and coordinated multidisciplinary teams, ensuring projects stayed on schedule and aligned with design intentions.",
+        "Contributed as a core construction team member for Public Foods: Community Pantry & Fridge.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Research Team Lead",
+      company_name: "CIMS",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "August 2020 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Led development of a Python-based workflow that automated the conversion of Point Cloud data to 3D Tiles, drastically improving load times and enabling real-time visualization of massive data.",
+        "Designed and implemented the UI for the a game-engine based digital twin application, conducting user testing sessions to ensure intuitive interaction and optimal user experience.",
+        "Created a geolocated federated model in Revit, consolidating all BIM and IFC Assets, and automated data workflows using Dynamo and Clarity to streamline export to Unreal Engine 5.",
+        "Led visualization and asset management projects for major heritage buildings using UE5, incorporating laser scanning, drone photogrammetry, BIM/HBIM modeling (Revit, Rhino), and LiDAR flood risk mapping with QGIS.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "Freelance Software Developer",
+      company_name: "Merchant.Designs",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Dec 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed an interactive community consultation platform, The Hub 2.0, using Unreal Engine 5 to visualize and gamify neighborhood planning and design for increased inclusivity and engagement.",
+        "Implemented features for BIM and scan data integration, allowing users to view, manipulate, and export contextual models directly into professional design software at accurate scale.",
+        "Collaborated with Carleton University’s Architecture Action Lab to launch the platform in Ottawa’s Russell Heights neighborhood, facilitating accessible and meaningful engagement for marginalized communities.",
       ],
     },
   ];
@@ -198,46 +199,49 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Russell Heights Hub App",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "The Hub is an interactive, real-time platform that gamifies community consultation by enabling residents to collaboratively visualize, and shape their neighborhoods using immersive 3D tools.",
+      details:"vibing",
       tags: [
         {
-          name: "react",
+          name: "Unreal Engine 5",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Reality Capture",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Rhino",
           color: "pink-text-gradient",
         },
       ],
       image: carrent,
       source_code_link: "https://github.com/",
+      project_link: "/projects/Russell-Heights-Hub",
     },
     {
-      name: "Job IT",
+      name: "Thesis: Rifts, Remnants and Reparations",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "This thesis explores how design can recover and honor the forgotten narratives of Partition survivors by transforming sites of refuge along the Radcliffe Line into spaces for storytelling, healing, and collective memory.",
       tags: [
         {
-          name: "react",
+          name: "Architecture Thesis",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Blender",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Rhino",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
       source_code_link: "https://github.com/",
+      project_link: "/projects/Architecture-Thesis",
     },
     {
       name: "Trip Guide",
