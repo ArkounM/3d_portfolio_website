@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
     return (
-        <footer className={`${styles.paddingX} w-full flex items-center py-5 fixed bottom-0 z-50 bg-primary`}
+        <footer className={`${styles.paddingX} w-full flex items-center py-5 bottom-0 z-50 bg-primary`}
         style={{ backgroundColor: '#faf7e9' }}>
             <div className="w-full flex justify-between items-center mx-auto">
                 <p>&copy; {new Date().getFullYear()} Merchant.Designs &nbsp;<span className="sm:block hidden">All Rights Reserved</span></p>

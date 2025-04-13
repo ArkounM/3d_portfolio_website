@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, project_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <div>
       <Link to={project_link}>
         <Tilt
           options={{
@@ -18,7 +18,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
             scale: 1,
             speed: 450
           }}
-          className='yellow-gradient p-5 rounded-2xl sm:w-[300px] w-full cursor-pointer'
+          className='yellow-gradient p-5 rounded-2xl sm:w-[400px] w-full cursor-pointer'
         >
           <div className='relative w-full h-[230px]'>
             <img
@@ -56,25 +56,25 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           </div>
         </Tilt>
       </Link>
-    </motion.div>
+    </div>
   );
 };
 
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div variants={textVariant()}>
         <p className={styles.sectionSubText}>My Projects</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
-      </motion.div>
+      </div>
 
       <div className="w-full flex">
-        <motion.p
+        <p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-[#555555] text-[17px] max-w-3x1 leading-[30px]"
           >
             This collection showcases a blend of academic architecture works and real-world applications that bridge the gap between design and technology. From conceptual design explorations to fully interactive experiences built in Unreal Engine 5, these projects reflect my passion for architecture, software development, and immersive storytelling. Each piece represents a step in my journey — pushing creative boundaries and exploring how digital tools can elevate spatial design.
-        </motion.p>
+        </p>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7 justify-center items-center">

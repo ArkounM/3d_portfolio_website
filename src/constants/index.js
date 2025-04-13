@@ -439,22 +439,22 @@ import {
     {
       name: "Coming soon: Hub 2.0",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Hub 2.0 is an interactive design platform with editing and visualization modes, enabling both community members and designers to collaboratively create, review, and refine neighborhood designs through real-time tools.",
       tags: [
         {
-          name: "nextjs",
+          name: "Unreal Engine 5",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Architecture",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Community Engagement",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: russellHeightsHero,
       source_code_link: "https://github.com/",
     },
   ];
