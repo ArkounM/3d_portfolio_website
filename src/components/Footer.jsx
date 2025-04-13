@@ -12,7 +12,7 @@ const Footer = () => {
         <footer className={`${styles.paddingX} w-full flex items-center py-5 bottom-0 z-50 bg-primary`}
         style={{ backgroundColor: '#faf7e9' }}>
             <div className="w-full flex justify-between items-center mx-auto">
-                <p>&copy; {new Date().getFullYear()} Merchant.Designs &nbsp;<span className="sm:block hidden">All Rights Reserved</span></p>
+                <p className=' text-[14px]'>&copy; {new Date().getFullYear()} Merchant.Designs &nbsp;<span className="sm:block hidden">All Rights Reserved</span></p>
                 <div className="flex gap-4">
                     <a href="https://github.com/ArkounM" target="_blank" rel="noopener noreferrer">
                         <img src={github} alt="GitHub" className='w-6'/>
