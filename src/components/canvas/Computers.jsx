@@ -20,7 +20,7 @@ const PointCloud = ({ fileUrl }) => {
     return (
       <points rotation={[-Math.PI / 2, 0, 0]}>
         <bufferGeometry attach="geometry" {...pointCloud} />
-        <pointsMaterial attach="material" size={2} vertexColors={true} />
+        <pointsMaterial attach="material" size={2.5} vertexColors={true} />
       </points>
     );
   }
@@ -35,7 +35,7 @@ const ComputersCanvas = () => {
   // Check if the device is mobile
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Set breakpoint for mobile devices
+      setIsMobile(window.innerWidth <= 758); // Set breakpoint for mobile devices
     };
 
     // Initial check
@@ -63,6 +63,7 @@ const ComputersCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
+          autoRotate
           enableZoom={false}
           enablePan={true}
           maxPolarAngle={Math.PI / 2}

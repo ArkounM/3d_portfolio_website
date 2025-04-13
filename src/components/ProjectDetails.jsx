@@ -4,6 +4,7 @@ import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
+import { link } from '../assets'
 
 const ProjectDetails = () => {
   const { slug } = useParams();
@@ -18,8 +19,24 @@ const ProjectDetails = () => {
 
   return (
     <div className="p-10 max-w-6xl mx-auto">
+      
       {/* Project Header */}
-      <h1 className="text-3xl font-bold mb-4">{project.name}</h1>
+      <h1 className="text-3xl font-bold mb-4 flex items-center gap-4">
+        {project.name}
+        {project.source_code_link && (
+          <a
+            href={project.source_code_link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-[25px] h-[25px] rounded-2xl  flex-shrink-0"
+          >
+            <img 
+            src= {link }
+            alt={"name"}
+            className='w-full h-full object-cover'/>
+          </a>
+        )}
+      </h1>
       <p className={styles.sectionSubText}>{project.subtitle}</p>
 
       {/* Render Image Only If It Is Not "" */}

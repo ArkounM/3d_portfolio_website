@@ -1,6 +1,8 @@
 import logo from "./logo.svg";
 import archviz from "./archviz.png";
 import creator from "./youtube.png";
+import instagram from "./instagram.png";
+import linkedin from "./linkedin.png";
 import architecture from "./architecture.png";
 import ue5 from "./ue5.png";
 import github from "./github.png";
@@ -20,6 +22,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import link from "./link.png";
 
 import cims from "./company/cims.png";
 import oht from "./company/oht.jpeg";
@@ -65,6 +68,8 @@ export {
   architecture,
   ue5,
   github,
+  instagram,
+  linkedin,
   menu,
   close,
   css,
@@ -115,4 +120,5 @@ export {
   pf_build,
   pf_diagrams,
   pf_front,
+  link,
 };

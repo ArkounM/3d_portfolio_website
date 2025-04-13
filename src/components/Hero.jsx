@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { styles } from "../styles";
@@ -58,7 +59,7 @@ const Hero = () => {
         <div className= "w-full h-full ">
           <ComputersCanvas />  
           <div
-            className = "absolute inset-0 bg-gradient-to-t from-transparent-60% via-transparent to-white/100"
+            className = "absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/100"
             style={{ 
               zIndex: 1,
               pointerEvents: "none", 
@@ -68,9 +69,22 @@ const Hero = () => {
           </div>            
       )}
       {/* Scroll Indicator */}
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10">
-        <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-full border-4 border-secondary flex justify-center items-start p-2">
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10 mb-10">
+      <button
+          onClick={() => {
+            if (window.innerWidth <= 768) {
+              // For mobile screens, scroll to (0, 500)
+              window.scrollTo({ top: 750, behavior: "smooth" });
+            } else {
+              // For larger screens, scroll to (0, 1200)
+              window.scrollTo({ top: 1200, behavior: "smooth" });
+            }
+          }}
+          className="flex flex-col justify-center items-center"
+          >
+          <div className= { 
+            isProjectPage? "w-[35px] h-[64px] rounded-full border-4 border-white flex justify-center items-start p-2": "w-[35px] h-[64px] rounded-full border-4 border-black flex justify-center items-start p-2"
+          }>
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -80,10 +94,10 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
+              className={isProjectPage? "w-3 h-3 rounded-full bg-white mb-1" : "w-3 h-3 rounded-full bg-black mb-1"}
             />
           </div>
-        </a>
+        </button>
       </div>
     </section>
   );

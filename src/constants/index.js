@@ -53,6 +53,7 @@ import {
     pf_build,
     pf_diagrams,
     pf_front,
+    link,
   } from "../assets";
 
   export const navLinks = [
@@ -385,7 +386,7 @@ import {
       image_6: argentina_axo7,
       image_7: "",
       image_8: argentina_render2,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://www.dezeen.com/2023/11/30/ten-projects-students-carleton-university/#:~:text=Designed%20for%20Deconstruction,cmail.carleton.ca",
       project_link: "/projects/Designed-for-Deconstruction",
       abstract: [
         "Designed for Deconstruction is a design proposal for Barrio Rodrigo Bueno, a self-built settlement in Buenos Aires, Argentina. These settlements are largely inhabited by migrants and their homes result from an iterative process. The homes can grow and evolve over time as the family’s needs change. Recent government initiatives aiming to demolish at-risk homes, provide new housing, add job security, and address soil erosion from the adjacent canal, mean radical change for the settlements. These initiatives however ignore intangible values, notably, the rich connection the community has with each other and their homes.",
@@ -425,7 +426,7 @@ import {
       image_6: "",
       image_7: "",
       image_8: "",
-      source_code_link: "https://github.com/",
+      source_code_link: "https://archactionlab.org/Public-Foods-2",
       project_link: "/projects/Public-Foods",
       abstract: [
         "As a response to the inflated cost of food and living in Ottawa, Carleton University architecture students designed and built Public Foods: a structure housing a community fridge and pantry accessible to all. Led by Assistant Professor of Design and Spatial Justice, Dr. Menna Agha in collaboration with OCH and a number of local organizations and businesses, the structure acts as a piece of community infrastructure that supports those experiencing food insecurity in Ottawa.",
