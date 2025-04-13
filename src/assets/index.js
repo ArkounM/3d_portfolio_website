@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+import archviz from "./archviz.png";
+import creator from "./youtube.png";
+import architecture from "./architecture.png";
+import ue5 from "./ue5.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -21,21 +21,49 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import cims from "./company/cims.png";
+import oht from "./company/oht.jpeg";
+import aal from "./company/aal.svg";
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import russellHeightsHero from "./russellHeightsHero.png";
+import rh_1 from "./projects/russellHeights/rh_1.jpeg";
+import rh from "./projects/russellHeights/rh.gif";
+import rh_cine1 from "./projects/russellHeights/rh_cine1.gif";
+import rh_cine2 from "./projects/russellHeights/rh_cine2.gif";
+import exhibition1_render from "./projects/thesis/exhibition1_render.png";
+import exhibition1_axo from "./projects/thesis/exhibition1_axo.png";
+import exhibition1_section from "./projects/thesis/exhibition1_section.png";
+import exhibition2_axo from "./projects/thesis/exhibition2_axo.png";
+import exhibition2_render from "./projects/thesis/exhibition2_render.png";
+import exhibition3_axo from "./projects/thesis/exhibition3_axo.png";
+import exhibition3_section from "./projects/thesis/exhibition3_section.png";
+import exhibitionAll_axo from "./projects/thesis/exhibitionAll_axo.png";
+import punjab_map from "./projects/thesis/punjab_map.png";
+import kasur_map from "./projects/thesis/kasur_map.png";
+import sa_hero from "./projects/streamableAssets/sa_hero.png";
+import sa from "./projects/streamableAssets/sa.png";
+import argentina_axo1 from "./projects/argentina/argentina_axo1.png";
+import argentina_axo2 from "./projects/argentina/argentina_axo2.png";
+import argentina_axo3 from "./projects/argentina/argentina_axo3.png";
+import argentina_axo4 from "./projects/argentina/argentina_axo4.png";
+import argentina_axo5 from "./projects/argentina/argentina_axo5.png";
+import argentina_axo6 from "./projects/argentina/argentina_axo6.png";
+import argentina_axo7 from "./projects/argentina/argentina_axo7.png";
+import argentina_render1 from "./projects/argentina/argentina_render1.png";
+import argentina_render2 from "./projects/argentina/argentina_render2.png";
+import pf_axo from "./projects/publicFoods/pf_axo.png";
+import pf_build from "./projects/publicFoods/pf_build.jpg";
+import pf_diagrams from "./projects/publicFoods/pf_diagrams.png";
+import pf_front from "./projects/publicFoods/pf_front.jpg";
 
 export {
   logo,
-  backend,
+  archviz,
   creator,
-  mobile,
-  web,
+  architecture,
+  ue5,
   github,
   menu,
   close,
@@ -52,11 +80,39 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  cims,
+  aal,
   carrent,
-  jobit,
+  exhibition1_render,
+  exhibition1_axo,
+  exhibition1_section,
+  exhibition2_axo,
+  exhibition2_render,
+  exhibition3_axo,
+  exhibition3_section,
+  exhibitionAll_axo,
   tripguide,
+  russellHeightsHero,
+  rh,
+  rh_cine1,
+  rh_cine2,
+  rh_1,
+  oht,
+  sa_hero,
+  sa,
+  punjab_map,
+  kasur_map,
+  argentina_axo1,
+  argentina_axo2,
+  argentina_axo3,
+  argentina_axo4,
+  argentina_axo5,
+  argentina_axo6,
+  argentina_axo7,
+  argentina_render1,
+  argentina_render2,
+  pf_axo,
+  pf_build,
+  pf_diagrams,
+  pf_front,
 };

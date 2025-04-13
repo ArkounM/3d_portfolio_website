@@ -20,7 +20,7 @@ const PointCloud = ({ fileUrl }) => {
     return (
       <points rotation={[-Math.PI / 2, 0, 0]}>
         <bufferGeometry attach="geometry" {...pointCloud} />
-        <pointsMaterial attach="material" size={0.05} vertexColors={true} />
+        <pointsMaterial attach="material" size={2} vertexColors={true} />
       </points>
     );
   }
@@ -30,6 +30,23 @@ const PointCloud = ({ fileUrl }) => {
 
 const ComputersCanvas = () => {
   const pointCloudFileUrl = "/desktop_pc/AAL_RusselHeightsSite_AF.ply"; // URL to your .ply point cloud file
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check if the device is mobile
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Set breakpoint for mobile devices
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <Canvas
@@ -37,7 +54,7 @@ const ComputersCanvas = () => {
       shadows
       camera={{
         position: [20, 50, 50], // Adjust camera position
-        zoom: 75,
+        zoom: isMobile ? 50 : 75, // Adjust zoom based on device
         near: 0.1,
         far: 1000,
       }}
@@ -45,12 +62,12 @@ const ComputersCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls 
-          enableZoom={false} 
+        <OrbitControls
+          enableZoom={false}
           enablePan={true}
-          maxPolarAngle={Math.PI / 2.8}
+          maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 3}
-          />
+        />
         <PointCloud fileUrl={pointCloudFileUrl} />
       </Suspense>
       <Preload all />
