@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 283.2 283.2">
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 283.2 283.2">
+  <!-- Generator: Adobe Illustrator 29.4.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 152)  -->
   <defs>
     <style>
-      .cls-1 {
-        fill: #fff;
-      }
-
-      .cls-2 {
+      .st0 {
         fill: none;
       }
 
-      .cls-3 {
-        fill: #b81d33;
+      .st1 {
+        fill: #dccf93;
       }
     </style>
   </defs>
-  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
-  <g>
-    <g id="Layer_1">
-      <circle class="cls-3" cx="141.6" cy="141.6" r="141.6"/>
-      <path class="cls-1" d="M119.5,160.7h-34.9l2.2-8.4h30.3l2.5,8.4ZM102.8,115.6l-25.4,73.3h-10.7l35.6-98h1.2l35.6,98h-11.1l-25.2-73.3Z"/>
-      <rect class="cls-2" x="68.3" y="92.4" width="72.4" height="98"/>
-      <path class="cls-1" d="M147.9,188.9v-96.3h8.5l23.8,47.2,24.3-47.3h8.2v96.5h-10.2v-72.7l-20.9,38.8h-4.2l-19.5-38.4v72.2h-10.1Z"/>
-      <rect class="cls-2" x="149.5" y="93.9" width="64.8" height="96.5"/>
-    </g>
+  <g id="Layer_11" data-name="Layer_1">
+    <circle class="st1" cx="141.6" cy="141.6" r="141.6"/>
+    <path d="M150.8,165.5h-18.3c0,0-15.7-16.2-15.7-16.2h49.2l-15.1,16.2h0ZM141.4,78.1l-49.3,142.3h-20.8L127.9,62.4h25.5l58.4,158h-21.5s-48.9-142.3-48.9-142.3Z"/>
+    <rect class="st0" x="68.3" y="92.4" width="72.4" height="98"/>
+    <path d="M109.2,220.3v-58.6l2.4-7.3,29.9,36,29.1-34.4,3.4,5.7v58.7h-10.2v-36.2l-20.9,23.6h-4.2l-19.5-23.4v35.9h-10.1,0Z"/>
+    <rect class="st0" x="149.5" y="93.9" width="64.8" height="96.5"/>
   </g>
 </svg>

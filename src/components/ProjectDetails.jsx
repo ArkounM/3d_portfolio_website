@@ -99,7 +99,11 @@ const ProjectDetails = () => {
       {project.image_2 !== "" && (
         <img src={project.image_2} className="w-full items-center" />
       )}
-
+      <div 
+      className="mt-10">
+        <h1 className={styles.sectionSubText}>{project.header_text}
+          </h1>
+      </div>
       <motion.div
         className="flex flex-col md:flex-row gap-10 mb-10"
         initial={{ opacity: 0, x: -50 }}
@@ -128,7 +132,7 @@ const ProjectDetails = () => {
         )}
 
       </motion.div>
-
+      
       {/* Render Image 4 Only If It Is Not "" */}
       {project.image_4 !== "" && (
         <img src={project.image_4} className="w-full items-center" />

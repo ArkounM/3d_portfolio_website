@@ -1,4 +1,4 @@
-import { details, image, s } from "framer-motion/client";
+import { details, header, image, s } from "framer-motion/client";
 import {
     architecture,
     archviz,
@@ -28,6 +28,9 @@ import {
     rh_cine1,
     rh_cine2,
     rh_1,
+    rh_edit1,
+    rh_edit2,
+    rh_hub2,
     logo,
     sa_hero,
     sa,
@@ -254,9 +257,9 @@ import {
       image_1:russellHeightsHero,
       image_2: rh_cine2,
       image_3: rh_1,
-      image_4: "",
-      image_5: "",
-      image_6: "",
+      image_4: rh_hub2,
+      image_5: rh_edit1,
+      image_6: rh_edit2,
       image_7: "",
       image_8: "",
       video: "https://www.youtube.com/embed/fEai5jur3oc?start=45",
@@ -269,10 +272,15 @@ import {
         "To build on this engagement, I set out to build a proof-of-concept interactive architectural visualization (ArchViz) app in 27 days using Unreal Engine. The 'Hub' app allows users to explore a detailed 3D model of 1700SPOT, simulating weather, time of day, and seasonal changes. The main features include a top-down view of design phases, toggles for BIM and drone-based point clouds, and an annotation menu to explain design decisions. A displacement mode lets users 'lift' parts of the model, and a project timeline slider helps visualize how the site evolved.",
         ],
       body_text2:[
-        "The end goal is to have the app streamed to the web browser via a platform called pixel streaming. Meaning anyone on any device with access to the internet can connect - providing a more accessible approach to interactive design and community engagement.", "Check out the full video walkthrough of how I created the app in 27 days below!",
+        "Public engagement is vital for creating successful community interventions, but traditional consultation methods often fall short in fostering inclusivity and active participation. The Hub 2.0 aims to bridge this gap by transforming consultations into interactive, engaging, and community-driven experiences.", 
+        "This project builds on Hub 1.0, which began as a personal passion project and proof of concept that was then presented to the Carleton University’s nonprofit Architecture Action Lab (AAL). It was designed to showcase what’s possible when communities are given digital tools to visualize and influence their own neighborhoods. Developed without any funding, Hub 1.0 laid the foundation for a new kind of participatory design process.",
         ],
-      body_text3:[""],
-      body_text4:[""],
+      body_text3:["Using Unreal Engine 5’s real-time rendering capabilities, Hub 2.0 will gamify the consultation process, enabling community members to explore realistic digital versions of their neighborhoods and directly contribute to their design.",
+         "With simple, intuitive tools, users can add models and basic shapes, sketch directly on the scene to highlight areas of interest, manipulate objects using move, rotate, and scale tools, and leave comments that are saved to the database. Every suggestion is saved to the platform, creating a visual timeline of community feedback from initial concepts through to final construction.",
+      
+      ],
+      body_text4:["Check out the video below to see how I built the Hub 1.0 app in 27 days!",],
+      header_text: ["What's Next? HUB 2.0"]
       },
     
     {

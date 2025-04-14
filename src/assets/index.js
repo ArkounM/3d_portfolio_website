@@ -35,6 +35,9 @@ import rh_1 from "./projects/russellHeights/rh_1.jpeg";
 import rh from "./projects/russellHeights/rh.gif";
 import rh_cine1 from "./projects/russellHeights/rh_cine1.gif";
 import rh_cine2 from "./projects/russellHeights/rh_cine2.gif";
+import rh_edit1 from "./projects/russellHeights/rh_edit1.png";
+import rh_edit2 from "./projects/russellHeights/rh_edit2.png";
+import rh_hub2 from "./projects/russellHeights/rh_hub2.png";
 import exhibition1_render from "./projects/thesis/exhibition1_render.png";
 import exhibition1_axo from "./projects/thesis/exhibition1_axo.png";
 import exhibition1_section from "./projects/thesis/exhibition1_section.png";
@@ -102,6 +105,9 @@ export {
   rh_cine1,
   rh_cine2,
   rh_1,
+  rh_edit1,
+  rh_edit2,
+  rh_hub2,
   oht,
   sa_hero,
   sa,
@@ -121,4 +127,5 @@ export {
   pf_diagrams,
   pf_front,
   link,
+
 };

@@ -22,18 +22,18 @@ const Hero = () => {
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 z-10 pointer-events-none`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#b81d33]" />
-          <div className="w-1 sm:h-80 h-40 red-gradient" />
+          <div className="w-5 h-5 rounded-full bg-[#DCCF93]" />
+          <div className="w-1 sm:h-80 h-40 yellow-gradient" />
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} ${
-            isProjectPage ? "text-black": "text-black"
+            isProjectPage ? "text-white": "text-white"
           }`}>
             {isProjectPage ? project?.name : "Hi, I'm"}{" "}
-            <span className="text-[#b81d33]">{isProjectPage ? "" : "Arkoun"}</span>
+            <span className="text-[#DCCF93]">{isProjectPage ? "" : "Arkoun"}</span>
           </h1>
           <p className={`${styles.heroSubText} ${
-            isProjectPage ? "text-black": "text-black"
+            isProjectPage ? "text-white": "text-white"
           }`}>
             {isProjectPage
               ? project?.description
@@ -51,7 +51,7 @@ const Hero = () => {
             className="w-full h-full object-cover"
           />
           <div
-            className = "absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/100"
+            className = "absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-black/100"
             style={{ zIndex: 1 }}
           />
         </div>
@@ -59,7 +59,7 @@ const Hero = () => {
         <div className= "w-full h-full ">
           <ComputersCanvas />  
           <div
-            className = "absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/100"
+            className = "absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-black/100"
             style={{ 
               zIndex: 1,
               pointerEvents: "none", 
@@ -69,7 +69,7 @@ const Hero = () => {
           </div>            
       )}
       {/* Scroll Indicator */}
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10 mb-10">
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10">
       <button
           onClick={() => {
             if (window.innerWidth <= 768) {
