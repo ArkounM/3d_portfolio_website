@@ -21,7 +21,7 @@ import {
     cims,
     carrent,
     exhibition1_render,
-    tripguide,
+    sa_aerial,
     threejs,
     russellHeightsHero,
     rh,
@@ -57,6 +57,10 @@ import {
     pf_diagrams,
     pf_front,
     link,
+    yt_python,
+    yt_intro,
+    yt_style,
+    yt_usage, 
   } from "../assets";
 
   export const navLinks = [
@@ -262,8 +266,8 @@ import {
       image_6: rh_edit2,
       image_7: "",
       image_8: "",
-      video: "https://www.youtube.com/embed/fEai5jur3oc?start=45",
-      source_code_link: "https://www.youtube.com/watch?v=fEai5jur3oc&t=1s",
+      video: "https://www.youtube.com/embed/jLLI8WyM4Vg?si=Y4U97i1R0gYA6JEq",
+      source_code_link: "https://www.youtube.com/embed/jLLI8WyM4Vg?si=Y4U97i1R0gYA6JEq?=1111",
       project_link: "/projects/Russell-Heights-Hub",
       abstract: [
         "1700SPOT is a multifunctional public space co-designed with the Russell Heights community to promote youth mental health and well-being. Developed through a collaboration between community organizations and Carleton Architecture students, the space features a gathering zone, an outdoor cinema, and a gym. From the early stages of consultation, 3D visualizations proved especially engaging for the community—particularly the youth—who were excited to see representations of the spaces they helped shape.",
@@ -282,9 +286,8 @@ import {
       body_text4:["Check out the video below to see how I built the Hub 1.0 app in 27 days!",],
       header_text: ["What's Next? HUB 2.0"]
       },
-    
     {
-      name: "Rifts, Remnants and Reparations",
+      name: "Rifts, Remnants & Reparations",
       subtitle: "Design as a Facilitator of Storytelling in Post-Partition Punjab - M.Arch Thesis",
       description:
         "This thesis explores how design can recover and honor the forgotten narratives of Partition survivors by transforming sites of refuge along the Radcliffe Line into spaces for storytelling, healing, and collective memory.",
@@ -328,6 +331,7 @@ import {
     },
     {
       name: "Streamable Assets",
+      subtitle: "The modeled content is property of PSPC, produced under contract with CENTRUS.",
       description:
         "Streamable Assets is a collaborative app by CIMS and CENTRUS that uses Unreal Engine 5 to create an interactive Visual Twin of Parliament's Centre Block Rehabilitation project using BIM, photogrammetry, and laser scanning data.",
       tags:[
@@ -346,7 +350,7 @@ import {
       ],
       image: sa,
       image_hero: sa_hero,
-      image_header: sa,
+      image_header: sa_aerial,
       image_1: "",
       image_2: "",
       image_3: "",
@@ -356,7 +360,9 @@ import {
       image_7: "",
       image_8: "",
       video: "https://www.youtube.com/embed/zVLCuKxAdjk?start=2425",
-      abstract: ["Streamable Assets is a joint effort between CIMS and CENTRUS to create an application that serves as a Visual Twin of Parliament's Centre Block Rehabilitation (CBR) project. It uses assets from BIM, photogrammetry and terrestrial laser scanning to create an interactive app that allows users to manipulate existing models, proposed designs, a catalogue of heritage assets - all using the real-time rendering capabilities of Unreal Engine 5. CIMS has been working in Unreal Engine for over 5 years on our Visualization and Storytelling projects. It's a tool that provides users with an extensive range of features allowing for the real time rendering and simulation of large datasets, BIM models and so much more!"],
+      abstract: ["Streamable Assets is a joint effort between CIMS and CENTRUS to create an application that serves as a Visual Twin of Parliament's Centre Block Rehabilitation (CBR) project. It uses assets from BIM, photogrammetry and terrestrial laser scanning to create an interactive app that allows users to manipulate existing models, proposed designs, a catalogue of heritage assets - all using the real-time rendering capabilities of Unreal Engine 5. CIMS has been working in Unreal Engine for over 5 years on our Visualization and Storytelling projects. It's a tool that provides users with an extensive range of features allowing for the real time rendering and simulation of large datasets, BIM models and so much more!", 
+        "Check out this fantastic talk at Unreal Fest Seattle for the visualization work of the Centre-Block Rehabilitation Project! It has been a pleasure collaborating with HOK and CENTRUS on the Streamable Assets Application and producing the exterior visualizations for this talk.",
+      ],
       body_text1:[],
       body_text2: [""],
       body_text3:[""],
@@ -445,9 +451,9 @@ import {
       body_text4:[""],
       },
     {
-      name: "Coming soon: Hub 2.0",
+      name: "YT To Shorts",
       description:
-        "Hub 2.0 is an interactive design platform with editing and visualization modes, enabling both community members and designers to collaboratively create, review, and refine neighborhood designs through real-time tools.",
+        "An intelligent video processing tool that automatically identifies and extracts engaging moments from long-form videos, converting them into vertical format clips suitable for platforms like YouTube Shorts, Instagram Reels, or TikTok.",
       tags: [
         {
           name: "Unreal Engine 5",
@@ -462,8 +468,34 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: russellHeightsHero,
-      source_code_link: "https://github.com/",
+      image: yt_python,
+      image_hero: yt_style,
+      image_header: yt_intro,
+      image_1: "",
+      image_2: "",
+      image_3: yt_usage,
+      image_4: "",
+      image_5: "",
+      image_6: "",
+      image_7: "",
+      image_8: "",
+      source_code_link: "https://github.com/ArkounM/YT_to_Shorts",
+      project_link: "/projects/YT_To_Shorts",
+      abstract: [
+        "YT_to_Shorts is an open-source Python utility developed to streamline the content repurposing process for video creators. By combining OpenAI’s Whisper and Google’s Gemini AI, the tool automatically identifies compelling moments in long-form video content and transforms them into polished, vertical-format clips optimized for platforms like TikTok, YouTube Shorts, and Instagram Reels.",
+        
+      ],
+      header_text: ["Key Features"],
+      body_text1:[],
+      body_text2: ["Automatic Highlight Detection: Uses AI to detect engaging, emotional, or insightful moments suitable for short-form formats.",
+        "Transcription & Captioning: Leverages Whisper to generate accurate transcriptions with word-level timing, enabling synced, dynamic captions.",
+        "Vertical Video Formatting: Outputs ready-to-publish 9:16 clips, complete with background blur and caption styling via OpenCV and Pillow.",
+        "CLI-Driven Workflow: A command-line interface supports efficient batch processing and full customization via flags and prompts.",
+        "Additional Utilities: Includes companion scripts for full-length caption animations and automated chapter generation.",
+        "This project demonstrates the practical application of AI in creator tooling, focusing on time-saving automation and content scalability.",],
+      body_text3:[""],
+      body_text4:[""],
+      video: "https://www.youtube.com/embed/iaG6FjN2tqU?si=57SGyt5Uv2LtKYBH",
     },
   ];
   

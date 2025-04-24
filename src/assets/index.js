@@ -50,6 +50,7 @@ import punjab_map from "./projects/thesis/punjab_map.png";
 import kasur_map from "./projects/thesis/kasur_map.png";
 import sa_hero from "./projects/streamableAssets/sa_hero.png";
 import sa from "./projects/streamableAssets/sa.png";
+import sa_aerial from "./projects/streamableAssets/sa_aerial.gif";
 import argentina_axo1 from "./projects/argentina/argentina_axo1.png";
 import argentina_axo2 from "./projects/argentina/argentina_axo2.png";
 import argentina_axo3 from "./projects/argentina/argentina_axo3.png";
@@ -63,6 +64,11 @@ import pf_axo from "./projects/publicFoods/pf_axo.png";
 import pf_build from "./projects/publicFoods/pf_build.jpg";
 import pf_diagrams from "./projects/publicFoods/pf_diagrams.png";
 import pf_front from "./projects/publicFoods/pf_front.jpg";
+import yt_python from "./projects/yt_python/YT_PythonVideoTools_Thumbnail.png";
+import yt_intro from "./projects/yt_python/yt_python_intro.gif";
+import yt_style from "./projects/yt_python/yt_python_styling.png";
+import yt_usage from "./projects/yt_python/yt_python_usage.png";
+
 
 export {
   logo,
@@ -127,5 +133,9 @@ export {
   pf_diagrams,
   pf_front,
   link,
-
+  sa_aerial,
+  yt_python,
+  yt_style,
+  yt_intro,
+  yt_usage,
 };

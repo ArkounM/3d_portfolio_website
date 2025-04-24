@@ -32,8 +32,8 @@ const Contact = () => {
 
 
     emailjs.send(
-      'service_fbxtd1d',
-      'template_7gc6jop',
+      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
       {
         from_name: form.name,
         to_name: 'Arkoun',
@@ -41,7 +41,7 @@ const Contact = () => {
         to_email: 'arkounmerchant.arch@gmail.com',
         message: form.message,
       },
-      'C63azWu7PidheVxln'
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
         setLoading(false);
