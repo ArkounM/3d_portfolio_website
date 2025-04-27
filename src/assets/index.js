@@ -29,11 +29,9 @@ import oht from "./company/oht.jpeg";
 import aal from "./company/aal.svg";
 
 import carrent from "./carrent.png";
-import tripguide from "./tripguide.png";
 import russellHeightsHero from "./russellHeightsHero.png";
 import rh_1 from "./projects/russellHeights/rh_1.jpeg";
 import rh from "./projects/russellHeights/rh.gif";
-import rh_cine1 from "./projects/russellHeights/rh_cine1.gif";
 import rh_cine2 from "./projects/russellHeights/rh_cine2.gif";
 import rh_edit1 from "./projects/russellHeights/rh_edit1.png";
 import rh_edit2 from "./projects/russellHeights/rh_edit2.png";
@@ -61,9 +59,9 @@ import argentina_axo7 from "./projects/argentina/argentina_axo7.png";
 import argentina_render1 from "./projects/argentina/argentina_render1.png";
 import argentina_render2 from "./projects/argentina/argentina_render2.png";
 import pf_axo from "./projects/publicFoods/pf_axo.png";
-import pf_build from "./projects/publicFoods/pf_build.jpg";
+import pf_build from "./projects/publicFoods/pf_build.png";
 import pf_diagrams from "./projects/publicFoods/pf_diagrams.png";
-import pf_front from "./projects/publicFoods/pf_front.jpg";
+import pf_front from "./projects/publicFoods/pf_front.png";
 import yt_python from "./projects/yt_python/YT_PythonVideoTools_Thumbnail.png";
 import yt_intro from "./projects/yt_python/yt_python_intro.gif";
 import yt_style from "./projects/yt_python/yt_python_styling.png";
@@ -105,10 +103,8 @@ export {
   exhibition3_axo,
   exhibition3_section,
   exhibitionAll_axo,
-  tripguide,
   russellHeightsHero,
   rh,
-  rh_cine1,
   rh_cine2,
   rh_1,
   rh_edit1,
